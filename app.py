@@ -97,7 +97,7 @@ def consultar_movil(cliente_dni):
         listaMoviles = Movil.query.all()
         listaViajes=[]
         for viaje in lista:
-            if viaje.duracion==0:
+            if viaje.duracion==0 and viaje.DNICliente == usuario_actual.DNI:
                 listaViajes.append(viaje)
         longitud=len(listaViajes)
         return render_template('consultar_movil.html', usuario=usuario_actual,viajes=listaViajes,moviles=listaMoviles,len=longitud)
@@ -133,10 +133,11 @@ def elegirMovil(operador_dni,viajeID):
     if request.method == 'POST':
         num=int(request.form['MovilNum'])
         movil_actual =Movil.query.filter_by(numero = request.form['MovilNum']).first()
-        movil_actual.viajeBool = int(viajeID)
+        
         demora=int(request.form['espera'])
         viaje_actual.numMovil=num
         viaje_actual.demora=demora
+        movil_actual.viajeBool = int(viajeID)
         db.session.commit()
         return render_template('alerta_op.html', error='MOVIL ASIGNADO',usuario=usuario_actual)
     else:
