@@ -1,6 +1,6 @@
-  Hola, mi nombre es German Caballero. Este es el trabajo final de la materia Programacion Orientada a Objetos de la carrera 
-Licenciatura en Ciencias de la Computacion, donde usamos en lenguaje Python para la logica de la web app y tambien HTML y CSS para la parte visual de la pagina.
-  La pagina web se trata de una pagina para solicitar taxi o remis. Esta se ejecuta desde la terminar con el archivo app.py
-  En la opcion registrarse nos podemos registrar como cliente o como operador. En los usuarios cliente nos daran opciones para solicitar movil y otra opcion para 
-consultar el estado de los moviles pedidos.En los usuarios operador podemos asignar un movil a una peticion, podremos finalizar viajes y tambien consultar 
-viajes segun un movil en cierta fecha
+  Hola, mi nombre es Germón Caballero. Este es el trabajo final de la materia Programación Orientada a Objetos de la carrera 
+Licenciatura en Ciencias de la Computación, donde usamos en lenguaje Python para la lógica de la web app y tambien HTML y CSS para la parte visual de la página.
+  La página web se trata de una página para solicitar taxi o remis. Esta se ejecuta desde la terminal con el archivo app.py.
+  En la opción registrarse nos podemos registrar como cliente o como operador. En los usuarios tipo cliente nos daran opciones para solicitar movil y otra opcion para 
+consultar el estado de los moviles pedidos.En los usuarios tipo operador podemos asignar un móvil a una petición, podremos finalizar viajes y tambien consultar datos de 
+viajes de un móvil en una cierta fecha.
